@@ -23,7 +23,7 @@
 
 
 	<!-- Stylesheet linker code -->
-	<link href="/s/newsbeard.css" rel="stylesheet" type="text/css">
+	<link href="/css/newsbeard.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -58,7 +58,7 @@
 
 		$('#rssdata').ready(function()
 		{
-			var pipe_url = 'http://pipes.yahoo.com/pipes/pipe.run?_id=311e78677fe7b41877e10ef76a57e3c3&_render=json&_callback=?';
+			var pipe_url = 'http://pipes.yahoo.com/pipes/pipe.run?_id=e5779effb60c69b68ca1fea877aecd90&_render=json&from=1&limit=4';
 				$.getJSON(pipe_url,function(data)
 					{
 				$(data.value.items).each(function(index,item)
